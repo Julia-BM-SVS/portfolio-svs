@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#1b1b1f" />
+    <meta
+      name="description"
+      content="Skid Visual Science: creative data visualization, interactive storytelling and experimental design."
+    />
+    <title>Skid Visual Science | Through My Eyes</title>
+    <link rel="icon" type="image/png" href="images/iris.png" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- D3 is used for its data join when available. A native JS renderer is included as a fallback. -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"
+      defer
+    ></script>
+    <script src="iris-palette.js" defer></script>
+    <script src="visuals.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a href="index.html" class="brand" aria-label="Skid Visual Science home">
+        <img src="images/iris.png" alt="" class="brand-eye" />
+        <span class="brand-text">
+          <span class="brand-name">SKID VISUAL SCIENCE</span>
+          <span class="brand-tagline"
+            >data visualization &amp; creative coding</span
+          >
+        </span>
+      </a>
+      <nav class="navigation" aria-label="Main navigation">
+        <a href="#work">Work</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="contact-link"
+          >Contact <span aria-hidden="true">↗</span></a
+        >
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">DATA VISUALIZATION / CREATIVE CODING</p>
+          <h1 id="hero-title">Data is more<br />than numbers.</h1>
+          <p class="hero-vision">It can be seen, heard<br />and experienced.</p>
+          <p class="hero-description">
+            Creative data visualization across digital, physical and interactive
+            media.
+          </p>
+          <a class="hero-cta" href="#work"
+            >Explore selected work <span aria-hidden="true">↘</span></a
+          >
+        </div>
+
+        <!-- The iris is built from the SAME pixel buttons that form the wave. -->
+        <div
+          id="pixel-field"
+          class="pixel-field"
+          aria-label="Animated pixel iris mosaic. Hover over marked pixels to preview real visualizations. Click to explore the complete work."
+        >
+          <!-- Each individual pixel is constructed in script.js. -->
+        </div>
+
+        <button
+          class="replay-eye"
+          id="replay-eye"
+          type="button"
+          aria-label="Replay iris to mosaic animation"
+        >
+          ↻ REPLAY ANIMATION
+        </button>
+        <div class="wave-guidance">
+          <div class="wave-caption">
+            <span class="signal-dot" aria-hidden="true"></span>
+            <span
+              >SEE DATA THROUGH MY EYES
+              <span class="caption-arrow" aria-hidden="true">↗</span></span
+            >
+          </div>
+          <div class="pixel-inspector" id="pixel-inspector" aria-live="off">
+            <span id="inspector-label">HOVER A PIXEL TO EXPLORE</span>
+            <span class="inspector-swatch" id="inspector-swatch"></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="work-section" id="work" aria-labelledby="work-title">
+        <div class="section-intro">
+          <div>
+            <p class="eyebrow">01 / SELECTED WORKS</p>
+            <h2 id="work-title">From data<br /><em>to stories.</em></h2>
+          </div>
+          <p>
+            A curated portfolio of featured projects will appear here in the
+            coming months. For now, explore the real visualizations hidden in
+            the pixel mosaic above.
+          </p>
+        </div>
+        <div class="project-grid">
+          <a class="project-card" id="project-molecular" href="#contact">
+            <img
+              src="projects/molecular.svg"
+              alt="Demonstration molecular visualization with interconnected atoms and bonds"
+              loading="lazy"
+            />
+            <div class="project-meta">
+              <span
+                ><strong>01. Data in motion</strong
+                ><small>Live storytelling</small></span
+              ><span class="card-arrow" aria-hidden="true">↗</span>
+            </div>
+          </a>
+          <a class="project-card" id="project-dynamics" href="#contact">
+            <img
+              src="projects/dynamics.svg"
+              alt="Demonstration scientific visualization with flowing curves and plotted points"
+              loading="lazy"
+            />
+            <div class="project-meta">
+              <span><strong>02. Alt + Soundscapes</strong><small></small></span
+              ><span class="card-arrow" aria-hidden="true">↗</span>
+            </div>
+          </a>
+          <a class="project-card" id="project-atlas" href="#contact">
+            <img
+              src="projects/atlas.svg"
+              alt="Demonstration scientific visualization with clusters of cells"
+              loading="lazy"
+            />
+            <div class="project-meta">
+              <span
+                ><strong>03.Scientific visualizations</strong
+                ><small
+                  >Journal Covers / Figures / Visual summaries</small
+                ></span
+              ><span class="card-arrow" aria-hidden="true">↗</span>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section class="info-section" id="services">
+        <p class="eyebrow">02 / WHAT I DO</p>
+        <h2>From information<br />to experience.</h2>
+        <p>
+          Custom data graphics, infographics, interactive stories, creative
+          coding and experimental media.<br />For policy, the press, public
+          spaces, curious minds and sometimes just for fun. <br />
+          More will come here soon...
+        </p>
+      </section>
+      <section class="info-section" id="about">
+        <p class="eyebrow">03 / ABOUT</p>
+        <h2>Curiosity, creativity and a drive to make a difference.</h2>
+        <p>
+          I'm a scientist turned visual storyteller, exploring how data, design
+          and creative experimentation can help us see the world differently.
+          <br />
+          More will come here soon...
+        </p>
+      </section>
+      <section class="info-section contact-section" id="contact">
+        <p class="eyebrow">04 / CONTACT</p>
+        <h2>Let's make data visible.</h2>
+        <p>Contact details will be added here when the site is finished.</p>
+        <br />
+        More will come here soon...
+      </section>
+    </main>
+    <!-- Shared fullscreen artwork viewer. All 15 pixel discoveries open here. -->
+    <dialog
+      id="visual-viewer"
+      class="visual-viewer"
+      aria-labelledby="viewer-title"
+    >
+      <div class="viewer-panel">
+        <header class="viewer-toolbar">
+          <div class="viewer-heading">
+            <span id="viewer-category" class="viewer-category"
+              >VISUALIZATION</span
+            >
+            <h2 id="viewer-title">Explore a visualization</h2>
+          </div>
+          <div class="viewer-actions">
+            <span id="viewer-count" class="viewer-count">01 / 15</span>
+            <button
+              type="button"
+              id="viewer-prev"
+              class="viewer-icon-button"
+              aria-label="Previous visualization"
+            >
+              ←
+            </button>
+            <button
+              type="button"
+              id="viewer-next"
+              class="viewer-icon-button"
+              aria-label="Next visualization"
+            >
+              →
+            </button>
+            <button
+              type="button"
+              id="viewer-close"
+              class="viewer-icon-button viewer-close"
+              aria-label="Close viewer"
+            >
+              ×
+            </button>
+          </div>
+        </header>
+        <div
+          id="viewer-stage"
+          class="viewer-stage"
+          aria-label="Full visualization. Use plus and minus buttons to zoom and drag to pan."
+        ></div>
+        <footer class="viewer-footer">
+          <div id="viewer-zoom-controls" class="viewer-zoom-controls">
+            <button type="button" id="viewer-zoom-out" aria-label="Zoom out">
+              −
+            </button>
+            <span id="viewer-zoom-label">100%</span>
+            <button type="button" id="viewer-zoom-in" aria-label="Zoom in">
+              +
+            </button>
+            <button type="button" id="viewer-zoom-reset" class="viewer-reset">
+              RESET
+            </button>
+          </div>
+          <span class="viewer-help">ZOOM AND DRAG TO EXPLORE</span>
+          <a
+            id="viewer-original"
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            >OPEN ORIGINAL ↗</a
+          >
+        </footer>
+      </div>
+    </dialog>
+    <footer class="site-footer">
+      <span>SKID VISUAL SCIENCE</span
+      ><span>AN EXPERIMENT WITH PIXELS AND DATA © 2026</span>
+    </footer>
+  </body>
+</html>
