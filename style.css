@@ -38,7 +38,6 @@ button {
   gap: 30px;
   padding: 15px 5%;
   background: var(--vp-c-bg-alt);
-  border-bottom: 1px solid var(--teal-dark);
   position: relative;
   z-index: 10;
 }
@@ -70,7 +69,7 @@ button {
   letter-spacing: -0.5px;
 }
 .brand-tagline {
-  font-size: 12px;
+  font-size: 19px;
   font-weight: 300;
   color: var(--teal-light);
 }
